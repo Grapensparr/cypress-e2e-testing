@@ -1,3 +1,7 @@
+# Resultat:
+
+![image](https://user-images.githubusercontent.com/113124538/217798727-b440ddbe-2888-4ea6-86bf-069ed6e1cb6e.png)
+
 # Inlämningsuppgift E2E-tester
 
 Detta projekt skall användas som mall för inlämningen av e2e-tester. Klona ner repot, ta bort .git-mappen och skapa ert eget repo av projektet. Därefter kan ni börja skriva era tester.

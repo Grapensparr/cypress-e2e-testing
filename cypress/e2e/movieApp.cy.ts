@@ -5,6 +5,8 @@ beforeEach(() => {
 describe('Should test page setup', () => {
     it('Should have a search form', () => {
         cy.get('#searchForm');
+        cy.get('#searchText');
+        cy.get('#search');
     });
 
     it('Should have a movie container', () => {
@@ -13,7 +15,7 @@ describe('Should test page setup', () => {
 });
 
 describe('Should test the retrieval of data from the API', () => {
-    it("should display list of results from the actual API", () => {
+    it("Should display list of results from the actual API", () => {
         cy.get('#searchText').type('Avatar').should('have.value', 'Avatar');
         cy.get('form').submit();
     

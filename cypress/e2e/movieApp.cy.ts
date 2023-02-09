@@ -39,6 +39,7 @@ describe('Should test the retrieval of data from the API', () => {
     });
 
     it('Should display an error message, unable to fetch data', () => {
+        //Using intercept to return an empty array, to mock the situation where the API is unable to fetch data
         cy.intercept('GET', 'http://omdbapi.com/?apikey=416ed51a&s=*', { success: [] });
         cy.get('#searchText').type('Avatar').should("have.value", 'Avatar');
         cy.get('form').submit();

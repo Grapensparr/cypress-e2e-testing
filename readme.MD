@@ -1,6 +1,6 @@
 # Resultat:
 
-![image](https://user-images.githubusercontent.com/113124538/217798370-ce165a43-024a-4680-b26a-f4615f2d39e5.png)
+![image](https://user-images.githubusercontent.com/113124538/217798727-b440ddbe-2888-4ea6-86bf-069ed6e1cb6e.png)
 
 # Inlämningsuppgift E2E-tester
 

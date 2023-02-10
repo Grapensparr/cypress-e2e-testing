@@ -39,7 +39,7 @@ describe('Should test the retrieval of data from the API', () => {
     });
 
     it('Should display an error message, unable to fetch data', () => {
-        //Using intercept to return an empty array, to mock the situation where the API is unable to fetch data
+        //Using intercept to return an empty array when fetching data from the API. This simulates the situation where the API is unable to fetch data.
         cy.intercept('GET', 'http://omdbapi.com/?apikey=416ed51a&s=*', { success: [] });
         cy.get('#searchText').type('Avatar').should("have.value", 'Avatar');
         cy.get('form').submit();
@@ -49,7 +49,7 @@ describe('Should test the retrieval of data from the API', () => {
 
 describe('Should test the display of mock movies', () => {
     it('Should display list of mock movies', () => {
-        cy.intercept('GET', 'http://omdbapi.com/?apikey=416ed51a&s=*', {fixture: 'mockListOfMovies'});
+        cy.intercept('GET', 'http://omdbapi.com/?apikey=416ed51a&s=*', { fixture: 'mockListOfMovies' });
         cy.get('#searchText').type('Remember Me').should('have.value', 'Remember Me');
         cy.get('form').submit();
         
